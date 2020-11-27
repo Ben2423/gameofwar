@@ -1,0 +1,29 @@
+body {
+  background: #555151;
+  margin: center;
+}
+
+.container {
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  border: 8px solid black;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.container .player-1-area {
+  width: 50%;
+  float: right;
+  border-right: 1px solid;
+}
+
+.container .player-2-area {
+  width: 50%;
+  float: left;
+}
+
+.container .player-1-area .player-1-card-area {
+  border: 1px solid black;
+  justify-content: center;
+  height: 80vh;
+}
