@@ -26,14 +26,3 @@ let getElement = function(request) {
   return deck.slice(num, 1)[0]
 
 }
-
-let shuffle = function() {
-  for (let i = 0; i < deck.length; i++) {
-   shuffled.push(getElement())
-   
-
-  }
-  console.log(shuffled)
-
-}
-*/
