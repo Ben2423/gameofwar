@@ -1,28 +1,49 @@
 
+let deck = []
+const suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
+
+const values = [
+  "Ace",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "Jack",
+  "Queen",
+  "King",
+]
 
 
+for (let i = 0; i < suits.length; i++) {
+  for (let x = 0; x < values.length; x++) {
+    let card = { Value: values[x], Suit: suits[i] };
+        deck.push(card);
 
-deck = ["1Ace", "2Clubs", "5diamonds"]
-newDeck = []
-
-
-
-let shuffleArray = function(array) {
-  for (let i = deck.length; i > 0; i--) {
-    randomN = Math.floor(Math.random() * array.length)
-    ele = array[randomN]
-    delete array[randomN]
-    newDeck.push(ele)
   }
 }
-deck = ["1Ace", "2Clubs", "5diamonds"]
-shuffleArray(deck)
-console.log(newDeck)
 
 
-/*
-let getElement = function(request) {
- num = Math.floor(Math.random() * deck.length)
-  return deck.slice(num, 1)[0]
+
+let sorted = function(deck) {
+  for (let i = 0; i < deck.length; i++) {
+  j = random()
+  temp = deck[i]
+  deck[i] = deck[j]
+  deck[j] = temp
+}
 
 }
+
+let random = function() {
+  return Math.floor(Math.random() * deck.length)
+
+}
+
+sorted(deck)
+console.log(deck)
